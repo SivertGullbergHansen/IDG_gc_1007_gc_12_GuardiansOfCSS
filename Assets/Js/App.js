@@ -690,12 +690,10 @@ function slide19() {
     setTimeout(() => {
         addById ("slide18__love", "anim_love");
         document.getElementById("slide18").getElementsByTagName("p")[0].classList.add("fadeIn");
-
     }, 1000);
 
     // Slide 10
     setTimeout(() => {
-        
     }, 1000);
 }
 

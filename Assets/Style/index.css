@@ -197,7 +197,7 @@
 @keyframes smile {
   0% {
       opacity: 0;
-      transform: translateY(70px);
+      transform: translateY(150px);
   }
   25% { 
       opacity: 0.5;
@@ -210,7 +210,7 @@
   }
   100% {
       opacity: 0;
-      transform: translateY(-100px);
+      transform: translateY(-250px);
   }
 }
 
@@ -439,6 +439,10 @@ body {
   animation: hearts 15s alternate ease-in-out;
 } 
 
+.anim_crayons {
+  animation: drop 15s alternate ease-in-out;
+} 
+
 .anim_greencrayon {
   animation: greencrayon 10s forwards ease
 }
@@ -461,10 +465,6 @@ body {
 .anim_yellowcrayon {
   animation: yellowcrayon 10s forwards ease;
 }
-
-.anim_crayons {
-  animation: drop 15s alternate ease-in-out;
-} 
 
 .anim_man_fadeIn {
   animation: fadeIn 1s forwards !important;
@@ -914,8 +914,12 @@ body {
 }
 
 #slide16 .slide16__crayons {
+  position: absolute;
   width: 100%;
   height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
     
 #slide16 .slide16__crayons #slide16__crayons {
